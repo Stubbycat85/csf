@@ -1,0 +1,7 @@
+# Grader Name - Hunter Crook
+# Grader Login - crohun22
+import lab2
+
+while (n > 0):
+    n = n-1
+    print "Hello World!"
