@@ -5,3 +5,4 @@ import lab2
 while (n > 0):
     n = n-1
     print "Hello World!"
+print "Yay! Graded your world?"
