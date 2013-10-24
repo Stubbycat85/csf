@@ -1,5 +1,5 @@
-# Name: ...
-# Evergreen Login: ...
+# Name: Sam Stubbins
+# Evergreen Login: Stusam07
 # Computer Science Foundations
 # Programming as a Way of Life
 # Homework 3: DNA analysis (Part 1)
