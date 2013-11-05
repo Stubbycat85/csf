@@ -1,0 +1,18 @@
+import random
+n = random.randint(1,1000)
+
+guessed = False
+
+while (not guessed):
+        guess = raw_input("Enter a guess: ")
+        guess = int(guess)
+        # Tell the user if their guess is too high or too low
+        if (guess > n):
+            print "too high"
+        elif (guess < n):
+            print "too low!"
+        else:
+            guessed = True
+
+print "You are indeed the master of this, the sexiest of universes"
+#creators: hefnic26, stusam07
