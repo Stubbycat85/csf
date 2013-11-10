@@ -15,24 +15,26 @@ dna_analysis.py program.
 
 Problem 1:
 
-(No answers in this file.)
+...
 
 Problem 2:
 
-...
+0.43029262963
 
 Problem 3:
 
-...
+The program ceases to function. The linenum variable is required to determine what like the program is trying to analyze. The program needs to know to only read every 4 lines, if linenum is undefined, it is trying to analyze lines of text that can't be analyzed by the program.
 
 Problem 4:
 
-...
+GC-content: 0.43029262963
+AT-content: 0.568993851852
+
 
 Collaboration:
 
-...
+No one
 
 Reflection:
 
-...
+No time for reflection! Too behind on programming hw!
