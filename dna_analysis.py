@@ -55,6 +55,10 @@ total_count = 0
 # Number of G and C nucleotides seen so far.
 gc_count = 0
 at_count = 0
+a_count = 0
+t_count = 0
+g_count = 0
+c_count = 0
 
 
 # for each base pair in the string,
@@ -70,11 +74,44 @@ for bp in seq:
     elif bp == 'A' or bp == 'T':
         # increment the count of at
         at_count = at_count + 1
+for bp in seq:
+    if bp == 'A':
+        a_count = a_count + 1
+    
+    elif bp == 'T':
+        t_count = t_count + 1
+    
+    elif bp == 'C':
+        c_count = c_count + 1
+    
+    elif bp == 'G':
+        g_count = g_count + 1
+
+AT_GC_Ratio = float(at_count) / (gc_count)       
+sum_count = (a_count + t_count + g_count + c_count)        
+
+# divide the gc_count and at_count by the total_count
+gc_content = float(gc_count) / sum_count
+at_content = float(at_count) / sum_count
 
 
-# divide the gc_count by the total_count
-gc_content = float(gc_count) / total_count
-at_content = float(at_count) / total_count
 # Print the answer
 print 'GC-content:', gc_content
 print 'AT-content:', at_content
+print 'A Count:', a_count
+print 'T Count:', t_count
+print 'G Count:', g_count
+print 'C Count:', c_count
+print 'Sum Count:', sum_count
+print 'Total Count:', total_count
+print 'Length of sequence:', len(seq)
+print 'AT/GC Ratio:', AT_GC_Ratio
+
+if gc_content > 0.6:
+    print 'CG Classification: This is a high GC content organism'
+elif gc_content < 0.4:
+    print 'CG Classification: This is a low GC content organism'
+else:
+    print 'CG Classification: This is a moderate GC content organism'
+
+

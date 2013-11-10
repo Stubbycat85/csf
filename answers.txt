@@ -38,3 +38,39 @@ No one
 Reflection:
 
 No time for reflection! Too behind on programming hw!
+
+
+Problem 5:
+
+sample_1.fastq
+GC-content: 0.43029262963
+AT-content: 0.568993851852
+A Count: 7701287
+T Count: 7661547
+G Count: 5738773
+C Count: 5879128
+Sum Count: 26980735
+
+Problem 6:
+
+It appears that the totals for Sum Count are always different (except in the case of the small test) than the totals for the Length and the Total Count. This is because there exists a 5th variable, N, in the sequences, that is being counted in the total count and the sequence length but obviously not being counted in the sum of A, T, G, and C. This would of course throw off the GC content if the code was still using the total count instead of the sum count as the denominator, and Ill correct that now.
+
+Problem 7:
+
+Sample 1:
+AT/GC Ratio: 1.32234161747
+
+Problem 8:
+
+Sample 1:
+CG Classification: This is a moderate GC content organism
+
+Collaboration:
+Nicholas Hefling, Hefnic26
+
+Reflection:
+Feels good to be catching up, was daunted by this assignment at first but it started to click here
+
+
+
+
